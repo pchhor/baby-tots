@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    max-width: 70%;
+    margin: auto;
+    height: 100%;
+    color: #797777;
+    
+
+}
+.logo {
+  
+    font-size: 28px; /* Taille du texte */
+    font-weight: 700; /* Poids pour un texte en gras */
+    color: #9DDCDC; /* Couleur personnalisée pour le logo */
+    text-transform: ; /* Tout en majuscules pour un style distinctif */
+    letter-spacing: 2px; /* Espacement des lettres pour aérer le texte */
+    font-family: 'Josefin Sans';
+    
+}
+
+/* Header */
+header  {
+    /* background-color: #ffcccc; */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Espacement équilibré entre le titre et le menu */
+    align-items: center; /* Centrage vertical des éléments */
+    border-bottom: 1px solid #ebe8e8; /* Ligne de 2px de large et de couleur gris foncé */
+    padding-bottom: 10px; /* Optionnel, pour ajouter de l'espace sous la ligne */
+    background-color: ;
+}
+
+/* Titre du header */
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px; /* Taille adaptée pour les écrans mobiles */
+    margin: 0; /* Enlever les marges par défaut */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #797777;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+/* Conteneur principal */
+.search-container {
+    position: relative; /* Nécessaire pour positionner les éléments enfants */
+    height: 400px; /* Hauteur du conteneur */
+    display: flex;
+    align-items: center; /* Aligne verticalement la barre de recherche */
+    justify-content: center; /* Centre horizontalement la barre de recherche */
+    flex-direction: column; /* Permet de placer les éléments verticalement */
+    overflow: hidden; /* Coupe ce qui dépasse */
+}
+
+
+
+
+
+
+/* Image de fond */
+.search-background {
+    background-image: url('img/carrousel.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Couvre tout le conteneur */
+    background-position: center; /* Centre l'image */
+    position: absolute; /* Permet de le placer derrière la barre de recherche */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Place l'image en arrière-plan */
+    filter: brightness(70%); /* Optionnel : assombrit l'image pour améliorer la lisibilité */
+    
+}
+
+/* Barre de recherche */
+.search-bar {
+    position: relative; /* Nécessaire pour être au-dessus de l'image */
+    z-index: 1; /* Assure que la barre de recherche est au-dessus */
+    width: 90%;
+    display: inline-flex;
+    justify-content: space-evenly;  
+     margin-bottom: -0px;/* Espacement entre la barre et le texte */
+
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour plus de visibilité */
+}
+
+
+
+.search-description {
+    font-size: 40px;
+    color: white;
+    margin-top: 10px; /* Ajoute un espace au-dessus du texte */
+    text-align: center; /* Centre le texte */
+    position: relative; /* Utiliser le positionnement relatif */
+    font-family: 'Josefin Sans';
+
+    font-style: italic; /* Mettre le texte en italique pour le distinguer */
+    border-left: 5px solid #ccc; /* Ajouter une bordure à gauche pour donner du style */
+    padding-left: 20px; /* Espacer le texte de la bordure */
+    margin: 20px 0; /* Ajouter de l'espace autour de la citation */
+   
+    
+    line-height: 1.6; /* Augmenter l'interligne pour une meilleure lisibilité */
+    font-family: 'Georgia', serif; /* Utiliser une police élégante */
+ 
+
+}
+
+.filter {
+    width: 10%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour plus de visibilité */
+}
+
+/* Catégories */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.category {
+    background-color: white;
+    padding-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    margin: 10px;
+    min-height: 200px;
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit;        /* Conserve la couleur du texte */
+    
+
+}
+
+.category img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.cat1{
+    background-image: url('img/vetement.jpg');
+    background-size: cover; /* Assure que l'image couvre toute la zone de l'élément */
+    background-position: center; /* Centre l'image dans l'élément */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    color: white;
+
+}
+.cat2{
+    background-image: url('img/jouet.jpg');
+    background-size: cover; /* Assure que l'image couvre toute la zone de l'élément */
+    background-position: center; /* Centre l'image dans l'élément */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    color: white;
+}
+
+.cat3{
+    background-image: url('img/equipement.jpg');
+    background-size: cover; /* Assure que l'image couvre toute la zone de l'élément */
+    background-position: center; /* Centre l'image dans l'élément */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    color: white;
+}
+.cat4{
+    background-image: url('img/communauté.jpg');
+    background-size: cover; /* Assure que l'image couvre toute la zone de l'élément */
+    background-position: center; /* Centre l'image dans l'élément */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    color: white;
+}
+
+.cat5{
+    background-image: url('img/conseil.jpg');
+    background-size: cover; /* Assure que l'image couvre toute la zone de l'élément */
+    background-position: center; /* Centre l'image dans l'élément */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    color: white;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: rgb(240, 240, 240);
+    color: #9DDCDC;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: #797777;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .search-bar input {
+        width: 80%;
+    }
+    .categories {
+        gap: 20px;
+    }
+    .category {
+        width: 45%;
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    .search-bar input {
+        width: 90%;
+    }
+    .categories {
+        gap: 15px;
+    }
+    .category {
+        width: 100%;
+        margin: 10px 0;
+        min-height: 160px;
+    }
+}
+
+/* Adjusting for small screen height */
+@media (max-height: 600px) {
+    .search-bar input {
+        width: 70%;
+    }
+    .category {
+        min-height: 150px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+.saut-ligne {
+    display: block; /* Force l'élément à se comporter comme un bloc */
+    height: 20px;   /* Hauteur du saut de ligne */
+}
